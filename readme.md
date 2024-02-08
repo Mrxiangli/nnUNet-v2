@@ -1,3 +1,10 @@
+Some updates are made to make it work with < torch 2.0
+
+cuda/11.7.0
+cudnn/cuda-11.7_8.6
+
+
+
 # Welcome to the new nnU-Net!
 
 Click [here](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1) if you were looking for the old one instead.

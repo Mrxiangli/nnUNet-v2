@@ -877,7 +877,7 @@ if __name__ == '__main__':
         )
     predictor.initialize_from_trained_model_folder(
         join(nnUNet_results, 'Dataset300_synrad/nnUNetTrainer__nnUNetPlans__3d_fullres'),
-        use_folds=(0, 1, 2, 3, 4, 5 ),
+        use_folds=(0, 5 ),
         checkpoint_name='checkpoint_best.pth',
     )
     predictor.predict_from_files(join(nnUNet_raw, 'Dataset300_synrad/imagesTs'),

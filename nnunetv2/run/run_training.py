@@ -1,7 +1,8 @@
 import os
 import socket
 from typing import Union, Optional
-
+import sys
+sys.path.insert(1,"../..")
 import nnunetv2
 import torch.cuda
 import torch.distributed as dist

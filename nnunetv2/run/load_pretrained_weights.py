@@ -1,5 +1,5 @@
 import torch
-from torch._dynamo import OptimizedModule
+#from torch._dynamo import OptimizedModule
 from torch.nn.parallel import DistributedDataParallel as DDP
 
 
@@ -26,8 +26,8 @@ def load_pretrained_weights(network, fname, verbose=False):
         mod = network.module
     else:
         mod = network
-    if isinstance(mod, OptimizedModule):
-        mod = mod._orig_mod
+    # if isinstance(mod, OptimizedModule):
+    #     mod = mod._orig_mod
 
     model_dict = mod.state_dict()
     # verify that all but the segmentation layers have the same shape
